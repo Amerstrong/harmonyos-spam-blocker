@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="权限设置向导"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="4dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textStepContacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnGrantContacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="授予通讯录权限" />
+
+        <TextView
+            android:id="@+id/textStepPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnGrantPhoneState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="授予电话状态权限" />
+
+        <TextView
+            android:id="@+id/textStepScreening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnGrantScreening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="授予来电筛选（核心）" />
+
+        <TextView
+            android:id="@+id/textStepDialer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnGrantDialer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设为默认拨号（可选）" />
+
+        <Button
+            android:id="@+id/btnOpenDefaultApps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="打开系统「默认应用」设置" />
+
+        <Button
+            android:id="@+id/btnOpenAppSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开本应用权限页" />
+
+        <Button
+            android:id="@+id/btnEnterApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="进入应用" />
+
+        <Button
+            android:id="@+id/btnSkip"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="稍后再说" />
+
+    </LinearLayout>
+</ScrollView>

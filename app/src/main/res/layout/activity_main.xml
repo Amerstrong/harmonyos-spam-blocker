@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textSetupStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="monospace"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="服务诊断"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDiagnostic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="#FFF8E1"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="2dp"
+            android:padding="10dp"
+            android:textIsSelectable="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="系统回调记录（陌生来电时应有记录）"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textScreeningHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="#F5F5F5"
+            android:fontFamily="monospace"
+            android:maxLines="6"
+            android:padding="8dp"
+            android:textIsSelectable="true"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btnRefreshDiagnostic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="刷新诊断" />
+
+        <Button
+            android:id="@+id/btnHuaweiBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="华为：允许后台运行（防杀服务）" />
+
+        <Button
+            android:id="@+id/btnGrantScreening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="授予来电筛选权限" />
+
+        <Button
+            android:id="@+id/btnOpenDefaultApps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开默认应用设置（华为手动引导）" />
+
+        <Button
+            android:id="@+id/btnOpenSetup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="重新打开权限设置向导" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="拦截测试（无需真实骚扰电话）"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="输入号码检查规则判定；真实挂断需用另一部手机拨打测试。"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTestNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="测试号码，如 13800138000"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/btnSimulate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="模拟" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSimulateAndLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="模拟并写入拦截日志" />
+
+        <TextView
+            android:id="@+id/textSimulateResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#F5F5F5"
+            android:fontFamily="monospace"
+            android:padding="10dp"
+            android:text="输入号码后点「模拟」查看判定结果"
+            android:textIsSelectable="true"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="黑名单管理"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editBlacklist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="手动添加黑名单号码"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/btnAddBlacklist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRefreshContacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="刷新通讯录缓存" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="拦截日志"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textEmptyLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="暂无拦截记录"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="false" />
+
+    </LinearLayout>
+</ScrollView>
