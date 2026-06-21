@@ -28,17 +28,13 @@
 👉 **[下载/查看拦截演示视频 (MP4)](demo/lv_0_20260621160736.mp4)**
 
 ### 界面截图展示
-| 1. 权限配置向导 | 2. 拦截与诊断状态 |
+| 1. 权限配置向导 | 2. 本地黑名单列表 |
 | :---: | :---: |
-| ![权限向导](demo/Screenshot_20260615_104337_com.hangupphone.jpg) | ![服务诊断](demo/Screenshot_20260615_160100_com.hangupphone.jpg) |
+| ![权限向导](demo/Screenshot_20260615_104337_com.hangupphone.jpg) | ![黑名单列表](demo/Screenshot_20260615_174439_com.hangupphone.jpg) |
 
-| 3. 本地黑名单列表 | 4. 导入系统黑名单 |
+| 3. 导入系统黑名单 | 4. 系统底层回调说明 |
 | :---: | :---: |
-| ![黑名单列表](demo/Screenshot_20260615_174439_com.hangupphone.jpg) | ![导入黑名单](demo/Screenshot_20260615_174449_com.hangupphone.jpg) |
-
-| 5. 拦截日志记录 | 6. 系统底层回调说明 |
-| :---: | :---: |
-| ![拦截日志](demo/Screenshot_20260615_174459_com.hangupphone.jpg) | ![回调说明](demo/Screenshot_20260616_194923_com.hangupphone.jpg) |
+| ![导入黑名单](demo/Screenshot_20260615_174449_com.hangupphone.jpg) | ![回调说明](demo/Screenshot_20260616_194923_com.hangupphone.jpg) |
 
 ---
 
