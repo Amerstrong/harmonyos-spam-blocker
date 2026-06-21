@@ -27,3 +27,7 @@ captures/
 # OS files
 .DS_Store
 Thumbs.db
+
+# 忽略项目识别说明文本
+本项目目的挂断垃圾电话.txt
+
